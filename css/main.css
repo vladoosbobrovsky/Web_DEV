@@ -1,0 +1,114 @@
+body {
+	background: #ef7d74;
+	margin: 0px;
+}
+
+.header {
+	width: 100%;
+	height: 10vh; 
+	background: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header img {
+	padding-left: 50px;
+	padding-right: 50px;
+	float: middle;
+}
+
+.header-text{
+	color: black;/*color*/
+	text-decoration: none;/*підкреслення*/
+	display: flex;/*class with val.header*/
+	align-items: center;/*align_center*/
+	margin-left: 100px;/*margin-left*/
+}
+
+.header-text a{
+	padding: 5px;/*margin*/
+	color: black;/*color(ahref) : .header-text*/
+	text-decoration: none;/*remote underline a href */
+	font-family: impact;/*txt_style*/
+}
+
+.header-picture{
+	display: flex;
+	align-items: center;
+	margin-right: 100px;/*deep margin*/
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;/*colon's element value*/
+	width: 100%;
+	padding-top: 100px;/*cont_margin*/
+	text-align: center;/*align_center*/*/
+	color: white;
+}
+
+.container-text{
+	display: flex;
+	flex-direction: column;
+	width: 25%;/*25% from  container class*/
+}
+
+.container-text h1{
+	font-family: arial black;/*text style*/
+}
+
+.container-text p{
+	font-family: verdana;/*text style*/
+}
+
+.container-blocks{
+	display: flex;
+	flex-direction: row;
+}
+
+.container-item{
+	display: flex;
+	flex-direction: column;
+	width: 190px;
+	padding: 70px;
+	font-size: 16px;
+	font-family: verdana;
+}
+
+.container-item .title{
+	font-family: arial black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer {
+	margin-top: 50vh;
+	width: 100%;
+	height:10vh;
+		background: white;
+}
+
+@media screen and (max-width: 1022px) {
+	.container-blocks{
+		flex-direction: column;
+	}
+	.container-item{
+		padding: 5px;
+	}
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 409px){
+	.header{
+		flex-direction: column;
+		align-items: center;
+		height: 18vh;
+	}
+
+	.container-text{
+		width: 90%;
+	}
+
+}
+
