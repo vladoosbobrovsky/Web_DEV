@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MightyVold@r</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/main.css">
+
+
+</head>
+<header class = "header"> 
+    <div class = "header-text">
+        <a href="">SERVICES</a>
+        <a href="">WORK</a>
+        <a href="">THE TEAM</a>
+    </div>
+    <div class="header-picture">
+        <img src="img/header-pic.jpg" id = "header-picture">
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="container-text">
+            <h1>SERVICES</h1>
+            <p><span>Our vision is simple. We want to create websites and applications with both high quality design and easy-to-access content. The finished product will be totally unique and represent awesomeness.</span> </p>
+        </div>
+        <div class="container-blocks">
+            
+            <div class="container-item"> 
+                <div id ="img1"> <img src="img/folder_image.png"> </div>
+                <div id="u1" class="title"><b>USER INTERFACE DESIGN</b></div>
+                <div id="t1"> 
+                    <div>Wireframing</div>
+                    <div>Prototyping</div>
+                    <div>Usability-testing</div>
+                </div>        
+            </div>
+            
+            <div class="container-item"> 
+                <div id="img2"> <img src="img/pencil_image.png"> </div>
+                <div id="u2" class="title"><b>CONCEPT AND IDEAS</b></div>
+                <div id="t2">
+                     <div>Conceptualizing</div>
+                   <div>Digital Branding</div>
+                   <div>Product Strategy</div>
+                </div>     
+            </div>
+            
+            <div class="container-item"> 
+                <div id="img3"> <img src="img/mail_image.png"> </div>
+                <div id="u3" class="title"><b>DESIGHN AND BRANDING</b></div>
+                <div id="t3">
+                    <div>Interaction Desight</div>
+                    <div>Game Desight</div>
+                    <div>Identity Desight</div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    
+
+    <script type="text/javascript">
+    $(function(){
+        $('#img1').on ('click', function(){
+            $('body').css('background-color','#353949');
+        });
+    });
+    $(function(){
+        $('#img2').on ('click', function(){
+            $('body').css('background-color','#e85a59');
+        });
+    });
+    $(function(){
+        $('#img3').on ('click', function(){
+            $('body').css('background-color','#39ac98');
+        });
+    });
+   
+
+
+    $(function(){
+        $('#u1').on('mouseover', function(){
+            $('#t1>div').css('text-decoration','underline');
+        });
+    });
+    $(function(){
+        $('#u1').on('mouseout', function(){
+            $('#t1>div').css('text-decoration','none');
+        });
+    });
+
+        $(function(){
+        $('#u2').on('mouseover', function(){
+            $('#t2>div').css('text-decoration','underline');
+        });
+    });
+    $(function(){
+        $('#u2').on('mouseout', function(){
+            $('#t2>div').css('text-decoration','none');
+        });
+    });
+
+        $(function(){
+        $('#u3').on('mouseover', function(){
+            $('#t3>div').css('text-decoration','underline');
+        });
+    });
+    $(function(){
+        $('#u3').on('mouseout', function(){
+            $('#t3>div').css('text-decoration','none');
+        });
+    });
+       
+
+    $(function() {
+     $('#t1 > div').on('click', function() {
+        $(this).css('display', 'none');
+      });
+     });   
+
+    $(function() {
+     $('#t2 > div').on('click', function() {
+        $(this).css('display', 'none');
+      });
+     });
+
+    $(function() {
+     $('#t3 > div').on('click', function() {
+        $(this).css('display', 'none');
+      });
+     }); 
+    
+
+    $(function() {
+        $('#u1').on('click', function() {
+          $('#t1 > div').css('display','block');
+        });
+      });
+
+    $(function() {
+        $('#u2').on('click', function() {
+          $('#t2 > div').css('display','block');
+        });
+      });
+
+     $(function() {
+        $('#u3').on('click', function() {
+          $('#t3 > div').css('display','block');
+        });
+      });
+
+
+    
+
+    </script>>
+ </body>
+ <footer></footer>
+</html>
